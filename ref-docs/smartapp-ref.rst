@@ -586,7 +586,7 @@ If the response content type is JSON, the response data will automatically be pa
         httpGet(params) { resp ->
             resp.headers.each {
             log.debug "${it.name} : ${it.value}"
-        }
+        }}
         log.debug "response contentType: ${resp.contentType}"
         log.debug "response data: ${resp.data}"
     } catch (e) {
